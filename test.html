@@ -9,13 +9,15 @@
 
         </a-assets>
 
-        <a-sky src = '#sky'></a-sky>
+        <a-sky src = '#sky'></a-sky>  
+        <a-sphere position="0 1.25 -5" radius="1" color="#EF2D5E" >
+                <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000"
+                repeat="indefinite"></a-animation>
 
 
-        
-        <a-sphere position="0 1.25 -5" radius="1" color="#EF2D5E"></a-sphere>
-       
-        
+        </a-sphere>
+        <a-light type="ambient" color="#445451"></a-light>
+        <a-light type="point" intensity="2" position="2 4 4"></a-light>
 
 
     </a-scene>
